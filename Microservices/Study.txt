@@ -1,0 +1,230 @@
+
+
+SOA:
+
+Service-Oriented Architecture (SOA) is a stage in the evolution of application development and/or integration. 
+It defines a way to make software components reusable using the interfaces. 
+
+Formally, SOA is an architectural approach in which applications make use of services available in the network. 
+In this architecture, services are provided to form applications, through a network call over the internet. 
+It uses common communication standards to speed up and streamline the service integrations in applications.
+
+SOA or service-oriented architecture, is an architectural design style made to break monolithic applications 
+into a series of smaller modules applied to specific business objectives.
+
+If you’re thinking that SOA sounds a lot like microservices, you’re absolutely right.
+
+
+What are disadvantages of monoliths?
+This architecture has the following limitations or drawbacks: Tight coupling between components, 
+as everything is in one application. Less reusability. Large code base; tough for developers and QA to understand 
+the code and business knowledge. Less Scalable.
+
+
+Why SOA failed:
+
+SOA was unable to fulfill its mission of addressing various issues associated with monolithic architectures.
+
+In some aspects, SOA is a monolith. While, like microservices, SOA is made up of several smaller services, 
+SOA architectures are still relatively coarse-grained with a high-level of dependency between services.
+
+As such, SOAs are prone to many of the same issues you’ll find with monolithic architectures, including 
+interdependencies that force application-wide rebuilds anytime developers make changes.
+
+
+
+
+What are microservices:
+
+A simple definition of microservices is; a collection of loosely coupled, independently deployable services. 
+Each service is designed to perform a specific task or function and contains all of the components necessary to 
+carry out that function.
+
+All services found in a microservice architecture are fine-grained and use language-agnostic APIs such as REST to 
+communicate with one another. The benefit here is that developers can develop a service using the best language for 
+the job, while APIs work behind the scenes to create a cohesive front-end experience for users.
+
+
+Diff of SOA and microservices:
+
+1) Data Storage:
+SOA is similar to monolithic applications in that they typically share a single relational database. 
+As an application grows, its data characteristics and processing requirements can be heterogeneous.
+
+At which point, a one size fits all data solution is no longer ideal. In contrast, in a microservices architecture, 
+each service can utilize its own data store, allowing developers to choose the storage type that best meets 
+the storage and processing requirements of the data being utilized by the service.
+
+2) Communication:
+The way that microservices and SOA services communicate is also very different. 
+Microservices communicate through 
+language-agnostic protocols, typically over the network. While this increases the number of remote calls, 
+and in turn overhead, it results in faster communication, with a high degree of fault resistance.
+
+On the other hand, SOA communicates through an ESB(Enterprise service bus). 
+While this results in lower overhead, it does slow down 
+communication. 
+As ESB is a single POC and a single bus
+It also presents itself as a single point of failure with the potential to bring down all communication 
+throughout the application.
+
+
+
+Benefits Of Microservices
+Simpler To Deploy
+Deploy in literal pieces without affecting other services.
+
+Simpler To Understand
+Follow code easier since the function is isolated and less dependent.
+
+Reusability Across Business
+Share small services like payment or login systems across the business.
+
+Faster Defect Isolation
+When a test fails or service goes down, isolate it quickly with microservices.
+
+Minimized Risk Of Change
+Avoid locking in technologies or languages - change on the fly without risk.
+
+
+3)Coupling and cohesion:
+Microservices feature extremely low coupling and high cohesion. They achieve this by focusing on a single business function
+This results in services that can be independently built, deployed, and tested.
+
+SOA services are much larger in scope, have more interdependencies, and communication and data storage are 
+handled outside the services.
+
+
+
+When to use microservices:
+
+1)When you want your monolithic application to accommodate scalability, agility, manageability and delivery speed
+2)When you have to rewrite legacy applications in today’s programming languages or tech stacks to keep up with modern-day 
+business requirements and solutions
+3)When you have standalone business applications or modules that have to be reused across diverse channels—some good examples 
+would be login services, search options, authentication facilities and more
+4)If you’re building a highly agile application (product or service) that demands swift speed of delivery, innovation and more
+
+
+When not to use:
+1)if your business doesn’t have complex issues
+2) if you don’t have a team size that cannot handle the tasks involved.
+3)If your application does not require to be broken down into microservices, you don’t need this.
+
+
+Micriservices Architecture:
+1) Multiple Components:
+2) Built For Business:
+3) Simple Routing: Microservices act somewhat like the classical UNIX system: they receive requests, 
+	process them, and generate a response accordingly.
+4) Decentralized: 
+5) Failure Resistant:
+6) Evolutionary:
+
+
+
+Design Patterns of Microservices:
+Aggregator
+API Gateway
+Chained or Chain of Responsibility
+Asynchronous Messaging
+Database or Shared Data
+Event Sourcing
+Branch
+Command Query Responsibility Segregator
+Circuit Breaker
+Decomposition
+
+
+Aggregator:
+The Aggregate Design Pattern is based on the DRY principle. Based on this principle, you can abstract the logic into 
+a composite microservices and aggregate that particular business logic into one service.
+
+So, for example, if you consider two services: Service A and B, then you can individually scale these services 
+simultaneously by providing the data to the composite microservice.
+
+API Gateway Design Pattern:
+So, once the client sends a request, these requests are passed to the API Gateway which acts as an entry point 
+to forward the clients’ requests to the appropriate microservices. Then, with the help of the load balancer, the 
+load of the request is handled and the request is sent to the respective services. 
+
+Chained or Chain of Responsibility Pattern:
+So, if you have three services lined up in a chain, then, the request from the client is first received by Service A. 
+Then, this service communicates with the next Service B and collects data. 
+
+Asynchronous Messaging Design Pattern:
+they do not have to communicate with each other sequentially. 
+So, if you consider 3 services: Service A, Service B, and Service C. 
+The request from the client can be directly sent to the Service C and Service B simultaneously. 
+
+Database or Shared Data Pattern:
+go for database per service
+
+Event Sourcing Design Pattern:
+The event sourcing design pattern creates events regarding the changes in the application state. Also, 
+these events are stored as a sequence of events to help the developers track which change was made when.
+
+Branch Pattern:
+For example, if you consider an e-commerce application, then you may need to retrieve data from multiple sources 
+and this data could be a collaborated output of data from various services. So, you can use the branching pattern, 
+to retrieve data from multiple sources.
+
+
+Command Query Responsibility Segregator (CQRS) Design Pattern:
+According to this pattern, the application will be divided into two parts: Command and Query. 
+The command part will handle all the requests related to CREATE, UPDATE, DELETE while 
+the query part will take care of the materialized views. (Like only READ opeartions)
+
+
+Circuit Breaker Pattern
+So, when the number of failures crosses the threshold number, the circuit breaker trips for a particular time period. 
+
+
+
+
+CAP theorem, which states that a distributed system can deliver only two of the three overarching goals 
+of microservices design: consistency, availability and partition tolerance.
+
+CAP theory and microservices
+Let's start by reviewing the three qualities CAP specifically refers to:
+
+1)Consistency means that all clients see the same data at the same time, no matter the path of their request. 
+	This is critical for applications that do frequent updates.
+2)Availability means that all functioning application components will return a valid response, even if they are down. 
+	This is particularly important if an application's user population has a low tolerance for outages (such as a retail portal).
+3)Partition tolerance means that the application will operate even during a network failure that results in lost or 
+	delayed messages between services. This comes into play for applications that integrate with a large number 
+	of distributed, independent components.
+
+
+
+Refactoring a monolith to microservices:
+
+Read only the steps:
+Link: https://microservices.io/refactoring/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

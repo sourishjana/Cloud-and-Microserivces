@@ -1,0 +1,211 @@
+
+What is clound computing?
+
+Simply put, cloud computing is the delivery of computing services—including servers, storage, databases, 
+networking, software, analytics, and intelligence—over the Internet (“the cloud”) to offer faster innovation, 
+flexible resources, and economies of scale.
+
+
+Identify the various building blocks of Cloud Computing?
+The three are Software as a Service (SaaS), Platform as a Service (PaaS), and Infrastructure as a Service (IaaS).
+
+A -> application 
+D -> data
+M -> Middleware
+R -> Runtime
+
+Os -> O/S
+
+V -> Virtualization
+S -> Servers
+S -> Storage
+N -> Networking
+
+
+Iaas: Manages and provides the VSSN
+e.g Azure, AWS
+
+Question is why should we bother about building the VSSN part as it is same for all the other application
+Just build your own ADMR which makes u diff from other competitor
+
+
+Paas: manages MR O VSSN and we need to only configure AD
+e.g Google App Engine, Force.com, Joyent, Azure.
+
+
+IaaS: Here the entire stack is managed by service provider
+e.g gmail
+
+
+
+AWS -> Iaas, PaaS
+gmail -> SaaS
+SF.com -> Paas, SaaS
+
+<--------------------------------->
+IaaS		PaaS		SaaS
+
+-------Best value for money----->
+
+Now u need to figure out on which part your application sits in.
+More we go towards SaaS we get more value for money as we get the total application as a service 
+all the stuffs like scalability, error handling, maintenance is done by service provider
+
+
+5 Essential Characteristics of Cloud Computing:
+
+On-demand self-service
+Broad network access
+Resource pooling
+Rapid elasticity
+Measured service
+
+On demand self service:
+Instead of any person working in data center and configuring services and gets thing done as client needs
+Here we have a automatic process which takes care of all this service allocation and needs
+sometimes the cloud also tells the process that it is running out of resources and the auto process provides it
+with some resources
+Here the key is automation
+
+
+Broad network access:
+The cloud characteristic of Broad Network Access means that the service can be accessed from multiple 
+locations (such as from a corporate office or from home) using multiple different types of client 
+(such as a Windows PC or an Android mobile).
+
+Resource pooling:
+So we have various organizations and they need resources in our cloud storage.
+So process by which the cloud providers allocates resources in the storage for various org is called resource pooling
+The next resource we will look at that we can pool is the storage.
+
+Rapid elasticity:
+Rapid elasticity is a cloud computing term for scalable provisioning, or the ability to provide scalable services. 
+Experts point to this kind of scalable model as one of five fundamental aspects of cloud computing.
+
+Measured service:
+Measured service is a term that IT professionals apply to cloud computing. This is a reference to services 
+where the cloud provider measures or monitors the provision of services for various reasons, including billing, 
+effective use of resources, or overall predictive planning.
+
+
+Different types of cloud computing deployment models are:
+
+Public cloud 
+Private cloud
+Hybrid cloud
+Community cloud
+Multi-cloud 
+
+
+1. Public Cloud 
+
+The public cloud makes it possible for anybody to access systems and services. The public cloud may be less secure 
+as it is open for everyone. The public cloud is one in which cloud infrastructure services are provided over the 
+internet to the general people or major industry groups.
+
+2. Private Cloud 
+
+The private cloud deployment model is the exact opposite of the public cloud deployment model. It’s a 
+one-on-one environment for a single user (customer). There is no need to share your hardware with anyone else.
+
+3.  Hybrid cloud 
+
+By bridging the public and private worlds with a layer of proprietary software, hybrid cloud computing gives 
+the best of both worlds. With a hybrid solution, you may host the app in a safe environment while taking advantage 
+of the public cloud’s cost savings.
+
+4. Community cloud
+
+It allows systems and services to be accessible by a group of organizations. It is a distributed system that is 
+created by integrating the services of different clouds to address the specific needs of a community, industry, or business.
+
+
+Here is a list of my top 10 cloud service providers: 
+Amazon Web Services (AWS)
+Microsoft Azure
+Google Cloud
+Alibaba Cloud
+IBM Cloud
+Oracle
+Salesforce
+SAP
+Rackspace Cloud
+VMWare
+
+
+
+Advantages of cloud computing:
+1) Back-up and restore data
+2) Improved collaboration
+3) Excellent accessibility
+4) Low maintenance cost
+5) Mobility
+6) IServices in the pay-per-use model
+7) Unlimited storage capacity
+8) Data security
+
+Disadvantages of Cloud Computing
+1) Internet Connectivity
+2) Vendor lock-in : Organizations may face problems when transferring their services from one vendor to another.
+3) Limited Control
+4) Security
+
+
+
+Cloud Computing Architecture
+Cloud Computing Architecture is divided into two parts, i.e., front-end and back-end. 
+Front-end and back-end communicate via a network or internet. 
+
+Front-End 
+It provides applications and the interfaces that are required for the cloud-based service.
+It consists of client’s side applications, which are web browsers such as Google Chrome and Internet Explorer.
+Cloud infrastructure is the only component of the front-end.
+Cloud infrastructure consists of hardware and software components such as data storage, server, virtualization software, etc.
+It also provides a Graphical User Interface to the end-users to perform respective tasks.
+
+
+Back-End 
+It is responsible for monitoring all the programs that run the application on the front-end
+It has a large number of data storage systems and servers
+
+Parts of backend:---------------------
+Application 
+It can either be a software or a platform 
+Depending upon the client requirement, the application provides the result to the end-user (with resources) in the back end
+
+Service 
+Service is an essential component in cloud architecture
+Its responsibility is to provide utility in the architecture
+
+Storage
+It stores and maintains data like files, videos, documents, etc. over the internet
+Some of the popular examples of storage services are below:
+Amazon S3
+Oracle Cloud-Storage 
+Microsoft Azure Storage
+
+Management
+Its task is to allot specific resources to a specific task, it simultaneously performs various functions of the cloud environment
+It helps in the management of components like application, task, service, security, data storage, and cloud infrastructure
+In simple terms, it establishes coordination among the cloud resources
+
+Security
+Security is an integral part of back-end cloud infrastructure
+It provides secure cloud resources, systems, files, and infrastructure to end-users
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
